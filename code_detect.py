@@ -1,4 +1,3 @@
-# FIXME: Bounding boxes don't seem to be drawn at all but codes are read
 # NOTE: This is totally vibe coded btw ♡
 import argparse
 import sys
@@ -143,7 +142,7 @@ def main():
 
             if not args.no_display:
                 cv2.imshow('ArUco - color', out_frame)
-                cv2.imshow('ArUco - gray', gray)
+                # cv2.imshow('ArUco - gray', gray)
 
                 key = cv2.waitKey(1) & 0xFF
                 if key == ord('q') or key == 27:
